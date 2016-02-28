@@ -1,3 +1,5 @@
+package com.kapitonenko.grep;
+
 import java.io.IOException;
 
 /**

@@ -1,3 +1,5 @@
+package com.kapitonenko.grep;
+
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -40,7 +42,7 @@ public class Grep {
             try (BufferedReader br = Files.newBufferedReader(Paths.get(pathname))) {
                 list = br.lines();
                 list.parallel().forEach(line -> {
-                    if (line.contains(searchString));
+                    if (line.contains(searchString))
                         System.out.println(" Path: " + pathname
                                             + " String: " + line);
                 });
